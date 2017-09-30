@@ -22,7 +22,7 @@ body {
     max-width: 100em;
     margin: 0 auto;
 
-    background: url('./images/indoor.jpg');
+    background: url('images/indoor.jpg');
     background-size: cover;
 
     color: $highlight-text-color;
@@ -247,4 +247,6 @@ section.numbers {
     top: 20px;
     background-color: red;
 }
+
+
 
