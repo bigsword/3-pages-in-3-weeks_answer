@@ -3052,8 +3052,9 @@ hr {
 .underline {
   font-size: 2em;
   text-transform: uppercase;
+  margin: 1em 0;
 }
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .underline:after {
   display: block;
   content: "";
@@ -3064,7 +3065,7 @@ hr {
   margin: 0 auto;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .hero {
   max-width: 100em;
   margin: 0 auto;
@@ -3072,49 +3073,49 @@ hr {
   background-size: cover;
   color: white;
 }
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .hero header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 50, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .hero header img {
   display: none;
   width: 8em;
   height: 2em;
   float: left;
 }
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .hero header ul {
   float: right;
 }
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .hero header ul li {
   float: left;
   margin: 0 .5em;
   padding: 1em;
 }
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .hero header ul li:last-child {
   border: 1px solid white;
 }
-/* line 72, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .hero h1 {
   font-size: 4em;
   padding: 1em 0 .5em 0;
   font-weight: bold;
 }
-/* line 78, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .hero h2 {
   font-size: 2em;
   color: #d9dada;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 form {
   padding: 2em 0 4em 0;
 }
-/* line 87, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 form input[type="text"] {
   padding: 1em;
   border: 0;
@@ -3123,7 +3124,7 @@ form input[type="text"] {
   background: white;
   opacity: .3;
 }
-/* line 96, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 form input[type="button"] {
   color: white;
   padding: 1em;
@@ -3147,7 +3148,7 @@ li {
     }
 }
 */
-/* line 123, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 section.numbers {
   /*background-color: white;*/
   /*float:left;
@@ -3156,10 +3157,11 @@ section.numbers {
   /*the other way is to set width:80%;*/
   position: relative;
   width: 80%;
+  max-width: 100em;
   margin: 0 auto;
   /*margin: -2em 0em 0em 0em;*/
 }
-/* line 132, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 section.numbers ul {
   /* one way to central align is to set left:-50%; left:50%;*/
   /*position:relative; */
@@ -3170,41 +3172,42 @@ section.numbers ul {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 140, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 section.numbers ul li {
   float: left;
   /*margin: 1em 0.5em;
   padding: 0.5em 1em;*/
-  width: 24.7%;
+  width: 24%;
   /* due to the round-up of browser, 25% not work with chrome. */
   background-color: white;
-  border: 1px solid;
+  border: 1px solid #989898;
   border-right: 0px;
   border-radius: 0;
 }
-/* line 151, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 section.numbers ul li:last-child {
-  border-right: 1px solid;
+  border-right: 1px solid #989898;
 }
-/* line 158, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 section.numbers h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 1em 1em 0.5em 1em;
 }
-/* line 164, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 section.numbers h3 {
   font-size: 1em;
   padding: 1em 0.5em;
 }
 
-/* line 170, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .how-it-works {
   position: relative;
   width: 80%;
+  max-width: 100em;
   margin: 0 auto;
 }
-/* line 174, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .how-it-works ul {
   /* one way to central align is to set left:-50%; left:50%;*/
   /*position:relative; */
@@ -3213,7 +3216,7 @@ section.numbers h3 {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 179, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .how-it-works ul li {
   position: relative;
   float: left;
@@ -3221,7 +3224,7 @@ section.numbers h3 {
   padding: 0.5em 1em;*/
   width: 33%;
 }
-/* line 187, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .how-it-works ul li:before {
   display: block;
   position: absolute;
@@ -3233,22 +3236,22 @@ section.numbers h3 {
   top: 4em;
   margin: 0 2em;
 }
-/* line 200, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .how-it-works ul li:last-child:before {
   display: none;
 }
-/* line 207, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .how-it-works h3 {
   padding: 1em;
   font-size: 1.5em;
   font-weight: bold;
 }
-/* line 213, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .how-it-works p {
   margin: 1em;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .number {
   display: block;
   margin: 1em auto 2em auto;
@@ -3266,18 +3269,18 @@ section.numbers h3 {
   border-radius: 100%;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .why-choose-us {
   position: relative;
   width: 80%;
   margin: 1em auto;
 }
-/* line 240, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .why-choose-us ul {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 241, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .why-choose-us ul li {
   position: relative;
   float: left;
@@ -3285,85 +3288,85 @@ section.numbers h3 {
   padding: 0.5em 1em;*/
   width: 50%;
 }
-/* line 251, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .why-choose-us i {
   position: absolute;
   left: 0;
   margin-left: 1em;
 }
-/* line 258, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .why-choose-us .right {
   margin-left: 5em;
 }
-/* line 262, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .why-choose-us h3 {
   margin: 1em 10px;
   font-size: 1.5em;
   font-weight: bold;
   text-align: left;
 }
-/* line 269, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 .why-choose-us p {
   margin: 1em 10px;
   text-align: left;
 }
 
-/* line 275, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .icon-large {
   font-size: 3.5em;
 }
 
-/* line 279, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 .icon-small {
   font-size: 2.5em;
 }
 
-/* line 283, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .icon-list {
   color: #E1AB66;
 }
 
-/* line 287, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .icon-pencil {
   color: #AB9BCF;
 }
 
-/* line 291, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .icon-users {
   color: #5D99C8;
 }
 
-/* line 295, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .icon-checkmark {
   color: #7CBC96;
 }
 
-/* line 299, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 .icon-price-tag {
   color: #50BCE5;
 }
 
-/* line 303, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .icon-cool {
   color: #E1AB66;
 }
 
-/* line 307, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .icon-user {
   color: #A77CBF;
 }
 
-/* line 311, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .icon-clipboard {
   color: #E17580;
 }
 
-/* line 315, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .icon-earth {
   color: #DD8463;
 }
 
-/* line 319, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .temp {
   display: none;
   position: absolute;
