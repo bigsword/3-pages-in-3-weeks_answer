@@ -18,6 +18,25 @@ body {
     text-align: center;
 }
 
+hr {
+    margin: 6em 0;
+}
+
+.underline {
+    font-size: 2em;
+    text-transform: uppercase;
+
+    &:after {
+        display: block;
+        content: "";
+        /* although there is no content, this line is necessary. */
+        background-color: $border-color;
+        width: 3em;
+        height: .1em;
+        margin: 0 auto;
+    }
+}
+
 .hero {
     max-width: 100em;
     margin: 0 auto;
@@ -29,6 +48,7 @@ body {
 
     header {
         img {
+            display: none;
             width: 8em;
             height: 2em;
             float: left;
@@ -40,6 +60,10 @@ body {
                 float: left;
                 margin: 0 .5em;
                 padding: 1em;
+
+                &:last-child {
+                    border: 1px solid $highlight-text-color;
+                }
             }
         }
         @include clearfix;
@@ -79,10 +103,6 @@ form {
         text-transform: uppercase;
     }
 }
-
-
-
-
 
 
 
@@ -184,27 +204,16 @@ section.numbers {
         @include clearfix;
     }
 
-
-
-    h2 {
-        font-size: 2em;
-        text-transform: uppercase;
-
-        &:after {
-            display: block;
-            content: "";
-            /* although there is no content, this line is necessary. */
-            background-color: $border-color;
-            width: 3em;
-            height: .1em;
-            margin: 0 auto;
-        }
-    }
-
     h3 {
+        padding: 1em;
         font-size: 1.5em;
         font-weight: bold;
     }
+
+    p {
+        margin: 1em;
+    }
+
 }
 
 .number {
@@ -222,8 +231,53 @@ section.numbers {
     @include border-radius(100%);
 }
 
-.icon {
+
+.why-choose-us {
+    position: relative;
+    width: 80%;
+    margin: 1em auto;
+
+    ul {
+        li {
+            position: relative;
+            float: left;
+            /*margin: 1em 0.5em;
+            padding: 0.5em 1em;*/
+            width: 50%;
+        }
+        @include clearfix;
+    }
+
+    i {
+        position: absolute;
+        left: 0;
+        margin-left: 1em;
+
+    }
+
+    .right {
+        margin-left: 5em;
+    }
+
+    h3 {
+        margin: 1em 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    p {
+        margin: 1em 10px;
+        text-align: left;
+    }
+}
+
+.icon-large {
     font-size: 3.5em;
+}
+
+.icon-small {
+    font-size: 2.5em;
 }
 
 .icon-list {
@@ -238,6 +292,30 @@ section.numbers {
     color: #5D99C8;
 }
 
+.icon-checkmark {
+    color: #7CBC96;
+}
+
+.icon-price-tag {
+    color: #50BCE5;
+}
+
+.icon-cool {
+    color: #E1AB66;
+}
+
+.icon-user {
+    color: #A77CBF;
+}
+
+.icon-clipboard {
+    color: #E17580;
+}
+
+.icon-earth {
+    color: #DD8463;
+}
+
 .temp {
     display: none;
     position: absolute;
@@ -247,6 +325,3 @@ section.numbers {
     top: 20px;
     background-color: red;
 }
-
-
-
