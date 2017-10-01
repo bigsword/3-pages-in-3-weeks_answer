@@ -16,6 +16,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
     text-align: center;
+    /*max-width: 100em;*/
 }
 
 hr {
@@ -143,7 +144,7 @@ section.numbers {
             float: left;
             /*margin: 1em 0.5em;
             padding: 0.5em 1em;*/
-            width: 24%;
+            width: 24.7%;
             /* due to the round-up of browser, 25% not work with chrome. */
             background-color: white;
             border: 1px solid $border-color;
@@ -238,6 +239,7 @@ section.numbers {
 .why-choose-us {
     position: relative;
     width: 80%;
+    max-width: 100em;
     margin: 1em auto;
 
     ul {
