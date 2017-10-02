@@ -107,6 +107,8 @@ form {
 
 
 
+
+
 /*
 li {
     float: left;
@@ -216,7 +218,6 @@ section.numbers {
     p {
         margin: 1em;
     }
-
 }
 
 .number {
@@ -256,7 +257,6 @@ section.numbers {
         position: absolute;
         left: 0;
         margin-left: 1em;
-
     }
 
     .right {
@@ -274,6 +274,49 @@ section.numbers {
         margin: 1em 10px;
         text-align: left;
     }
+}
+
+.foot-bar {
+    position: relative;
+    width: 80%;
+    max-width: 100em;
+    margin: 0 auto;
+
+    
+    .left {
+        float: left;
+        margin-left: 3em;
+    }
+    
+
+    .footer {
+        float: left;
+
+        a {
+            color: $text-color;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+    }
+
+    .right {
+        float: right;
+        margin-right: 3em;
+    }
+
+    li {
+
+        padding: 1.5em 0em;
+        margin: 0 1em;
+    }
+
+    .follow-us {
+        float: left;
+        padding: 1.5em 0em;
+        margin: 0 .5em;
+    }
+    @include clearfix;
 }
 
 .icon-large {
@@ -318,6 +361,18 @@ section.numbers {
 
 .icon-earth {
     color: #DD8463;
+}
+
+.icon-twitter {
+    color: #6097C7;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.icon-facebook {
+    color: #5573B2;
+    font-size: 1.5em;
+    text-decoration: none;
 }
 
 .temp {
